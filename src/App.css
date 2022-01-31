@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  background: #091921;
 }
 
-.App-link {
-  color: #61dafb;
+.Calculator {
+  position: relative;
+  display: grid;
+  border-radius: 14px;
+  background-color: rgb(65, 92, 119);
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.display {
+  background-color: aliceblue;
+  border-radius: 10px;
+  text-align: right;
+  padding: 8px;
+  font-size: 26px;
+  font-weight: 300;
+  margin: 6px;
+}
+
+.display span {
+  color: rgb(121, 121, 121);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+button {
+  background-color: rgb(164, 195, 219);
+  margin: 2px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  opacity: 0.9;
+  color: aliceblue;
+}
+
+.Operators {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Operators button {
+  flex: 1 1 0%;
+}
+
+.Digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Digits button {
+  flex: 1 1 32.333%;
+  max-width: 33.333%;
+}
+
+.Remove {
+  background-color: rgb(230, 115, 115);
+}
+
+.Equal {
+  background-color: rgb(57, 121, 185);
 }
