@@ -19,7 +19,7 @@ const App = () => {
 
   const handleClick = (x) => {
     const lastValue = value[value.length - 1];
-    const regex1 = /[/*+-]/;
+    const regex1 = /[/*+-.]/;
     const regex2 = /[/*+]/;
     if (value === "0" && !regex2.test(x)) {
       setValue(x);
